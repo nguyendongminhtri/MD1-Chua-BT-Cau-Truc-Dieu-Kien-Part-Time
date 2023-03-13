@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a = prompt('Nhập vào số kiểm tra: '); //kiểm tra a xem có phải số chẵn hay số lẻ 1--> 10
+    // console.log('check ===>', isNaN(8))
+    // switch (a%2==0) {
+    //   case true:
+    //     console.log('Số chẵn')
+    //         break;
+    //   case false:
+    //     console.log('số lẻ')
+    //         break;
+    //   default:
+    //     console.log('Không hợp lệ')
+    // }
+
+    //Bài toán nhập vào ngày in ra đó là ngày đi làm hay là ngày nghỉ sử dụng switch - case:
+    let day = +prompt('Nhập vào ngày: ');
+    let THU2 = 2;
+    let THU3 = 3;
+    let THU4 = 4;
+    let THU5 = 5;
+    let THU6 = 6;
+    let THU7 = 7;
+    let CHUNHAT = 8;
+    switch (day) {
+        case THU2:
+        case THU3:
+        case THU4:
+        case THU5:
+        case THU6:
+            console.log("đi làm")
+            break
+        case THU7:    //Ctr + Alt + V
+        case CHUNHAT:
+            console.log("Được nghỉ")
+            break
+        default:
+            console.log('Ngày không hợp lệ')
+    }
+</script>
+</body>
+</html>

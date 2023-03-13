@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    #heading {
+        position: absolute;
+        left: 150px;
+        top: 90px;
+    }
+
+    #buttonYes {
+        position: absolute;
+        left: 200px;
+        top: 200px;
+    }
+
+    #buttonNo {
+        position: absolute;
+        left: 220px;
+        top: 200px;
+    }
+
+</style>
+<h1 id="heading">DO YOU LOVE ME?</h1>
+<button id="buttonYes" onclick="love()">YES</button>
+<button id="buttonNo" onmouseover="noLove()">NO</button>
+
+<button id="btnCount" onclick="count()">Count</button>
+<h1 id="number"></h1>
+
+<script>
+    // <!--  Javascrip-->
+    // // Lấy ra button count
+    // let number = document.getElementById('number');
+    // let count = 0;
+    // // Ham đếm số
+    // function count() {
+    //     count++;
+    //     number.innerHTML = count;
+    // }
+
+    let buttonNo = document.getElementById('buttonNo');
+    let heading = document.getElementById('heading');
+
+    // Hàm đồng ý love
+    function love() {
+        heading.innerHTML = 'I LOVE YOU!'
+    }
+
+    // Hàm từ chối yêu
+    function noLove() {
+        // Lấy ra chiều cao của button so với màn hình
+        // round làm tròn trên khi số thập phân >=5
+        //floor: làm tròn xuống
+        // ceil làm tròn
+
+        let height = Math.round(Math.random() * window.innerHeight);
+        let width = Math.round(Math.random() * window.innerWidth);
+
+        // Thay đổi left và top của button thông qua thay đổi css
+        buttonNo.style.left = width + 'px';
+        buttonNo.style.top = height + 'px';
+    }
+
+    // Toán tử and
+    if (10 < 9 && 9 < 2) {
+        // KHối 1
+        console.log('Điều kiện đúng')
+    } else {
+        ///Khối 2
+        console.log('Điều kiện sai')
+
+    }
+
+    // Toán tử or
+    if (10 > 9 || 9 < 2) {
+        // KHối 1
+    } else {
+        ///Khối 2
+    }
+
+    // Toán tử phủ định
+    if (!true) {
+
+    } else {
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // if (a > b) {
+    //     // a >b
+    //     if (a > c) {
+    //         //a > c && a >b
+    //         console.log('VÀO TRƯỜNG HỢP 1')
+    //         console.log('số lớn nhất là: ', a)
+    //     } else {
+    //         //  b <a && a < c
+    //         console.log('VÀO TRƯỜNG HỢP 2')
+    //         console.log('số lớn nhất là: ', c)
+    //     }
+    // } else {
+    //     // b > a
+    //     if (b > c) {
+    //         //b>c && b > a
+    //         console.log('VÀO TRƯỜNG HỢP 3')
+    //         console.log('số lớn nhất là: ', b)
+    //     } else {
+    //         // a < b && b < c
+    //         console.log('VÀO TRƯỜNG HỢP 4')
+    //         console.log('số lớn nhất là: ', c)
+    //     }
+    // }
+    let a = 88;
+    let b = 44;
+    let c = 88;
+    let max = a>b?(a>c?a:c):(b>c?b:c);
+    console.log('số lớn nhất trong 3 số là: ', max)
+</script>
+</body>
+</html>
